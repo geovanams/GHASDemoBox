@@ -15,6 +15,7 @@ namespace UnsecureApp.Controllers
             {
                 return "Invalid path";
             }
+                
             using (FileStream fs = File.Open(userInput, FileMode.Open))
             {
                 byte[] b = new byte[1024];
